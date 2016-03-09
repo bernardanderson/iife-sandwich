@@ -8,6 +8,7 @@ var finalSandwichPrice = 0;
 var breadChooser = document.getElementById("breads");
 var meatChooser = document.getElementById("meats");
 var cheeseChooser = document.getElementById("cheeses");
+var condimentChooser = document.getElementById("condiments");
 
 
 function addToDOM(sentTotalPrice) {
@@ -29,5 +30,10 @@ meatChooser.addEventListener("change", function(changeEvent) {
 
 cheeseChooser.addEventListener("change", function(changeEvent) {
   var currentTotalPrice = SandwichMaker.addTopping('addCheese', changeEvent);
+  addToDOM(currentTotalPrice);
+});
+
+condimentChooser.addEventListener("change", function(changeEvent) {
+  var currentTotalPrice = SandwichMaker.addTopping('addCondiments', changeEvent);
   addToDOM(currentTotalPrice);
 });
