@@ -5,6 +5,7 @@ var totalPriceTarget = document.getElementById("price-target");
 var finalSandwichPrice = 0;
 
 // Get references to the div elements that has all the topping options
+var breadChooser = document.getElementById("breads");
 var meatChooser = document.getElementById("meats");
 
 
@@ -15,10 +16,12 @@ function addToDOM(sentTotalPrice) {
 }
 
 // Listener Events
-meatChooser.addEventListener("change", function(changeEvent) {
-
-  var currentTotalPrice = SandwichMaker.addTopping('addMeat', changeEvent);
-
+breadChooser.addEventListener("change", function(changeEvent) {
+  var currentTotalPrice = SandwichMaker.addTopping('addBread', changeEvent);
   addToDOM(currentTotalPrice);
-  
+});
+
+meatChooser.addEventListener("change", function(changeEvent) {
+  var currentTotalPrice = SandwichMaker.addTopping('addMeat', changeEvent);
+  addToDOM(currentTotalPrice);
 });
