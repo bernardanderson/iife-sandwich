@@ -16,8 +16,8 @@ var SandwichMaker = (function() {
       // Variable to hold whether the topping is (un)checked
       toppingChecked = sentChangeEvent.target.checked;
 
-      if (!toppingChecked) {
       // Determine the price of the topping chosen (- if checked)
+      if (!toppingChecked) {
         toppingPrice = 0 - toppingPrice;
       };
 

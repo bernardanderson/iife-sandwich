@@ -6,6 +6,7 @@
   <title>Iife Sandwich Maker</title>
 </head>
 <body>
+
   <div id="main-display">
     <p>Choose your Bread:</p>
     <div id="breads">
@@ -36,16 +37,15 @@
     </div>
 
     <p>Choose your Veggies:</p>
-    <div id="condiments">
+    <div id="veggies">
       <input type="checkbox" value=blackolives>Black Olives
       <input type="checkbox" value=mayostard>Lettuce
-      <input type="checkbox" value=nomayo>No Veggies
+      <input type="checkbox" value=noveggies>No Veggies
     </div>
-
   </div>
 
   <div id="total-order">
-    <p>Your total price so far is: <span id="price-target"></span></p>
+    <p class="output-cost">Your total price for the sandwich is: $<span id="price-target"></span></p>
   </div>
 
   <script type="text/javascript" src="DOMHandler.js"></script>
@@ -54,5 +54,6 @@
   <script type="text/javascript" src="Meat.js"></script>
   <script type="text/javascript" src="Cheese.js"></script>
   <script type="text/javascript" src="Condiments.js"></script>
+  <script type="text/javascript" src="Veggies.js"></script>
 </body>
 </html>

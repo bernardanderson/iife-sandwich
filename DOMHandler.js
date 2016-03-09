@@ -9,12 +9,12 @@ var breadChooser = document.getElementById("breads");
 var meatChooser = document.getElementById("meats");
 var cheeseChooser = document.getElementById("cheeses");
 var condimentChooser = document.getElementById("condiments");
+var veggieChooser = document.getElementById("veggies");
 
-
+// Add the topping to the SandwichMaker to increase the total price
 function addToDOM(sentTotalPrice) {
-  // Add the topping to the SandwichMaker to increase the total price
   finalSandwichPrice = sentTotalPrice;
-  totalPriceTarget.textContent = finalSandwichPrice;
+  totalPriceTarget.textContent = finalSandwichPrice.toFixed(2);
 }
 
 // Listener Events
@@ -35,5 +35,10 @@ cheeseChooser.addEventListener("change", function(changeEvent) {
 
 condimentChooser.addEventListener("change", function(changeEvent) {
   var currentTotalPrice = SandwichMaker.addTopping('addCondiments', changeEvent);
+  addToDOM(currentTotalPrice);
+});
+
+veggieChooser.addEventListener("change", function(changeEvent) {
+  var currentTotalPrice = SandwichMaker.addTopping('addVeggies', changeEvent);
   addToDOM(currentTotalPrice);
 });
