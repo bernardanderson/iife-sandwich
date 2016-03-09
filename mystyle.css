@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+#main-display {
+  display: flex;
+  flex-direction: column;
+}
+
+#total-order {
+  display: flex;
+  flex-basis: 45%;
+  justify-content: center;
+  align-items: center;
+}
+
+#total-order > p {
+  font-size: 1.4rem;
+}
+
+
+#total-order > p > span {
+  color: red;
+  font-size: 1.4rem;
+}
