@@ -1,0 +1,10 @@
+#main-display {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  width: 100px;
+  overflow: hidden;
+  border: 1px solid gray;
+}

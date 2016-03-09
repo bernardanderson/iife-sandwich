@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <title>Iife Sandwich Maker</title>
+</head>
+<body>
+  <div id="main-display">
+    <p>Choose your Bread:</p>
+    <div id="breads">
+      <input type="checkbox" value=white>White
+      <input type="checkbox" value=wholewheat>Whole Wheat
+      <input type="checkbox" value=nobread>No Bread
+    </div>
+
+    <p>Choose your Meat:</p>
+    <div id="meats">
+      <input type="checkbox" value=turkey>Turkey
+      <input type="checkbox" value=beef>Beef
+      <input type="checkbox" value=nomeat>No Meat
+    </div>
+
+    <p>Choose your Cheese:</p>
+    <div id="cheeses">
+      <input type="checkbox" value=bleu>Bleu
+      <input type="checkbox" value=cheddar>Cheddar
+      <input type="checkbox" value=nocheese>No Cheese
+    </div>
+
+    <p>Choose your Condiments:</p>
+    <div id="condiments">
+      <input type="checkbox" value=mayo>Mayo
+      <input type="checkbox" value=mayostard>Mayostard
+      <input type="checkbox" value=nomayo>No Mayo
+    </div>
+
+    <p>Choose your Veggies:</p>
+    <div id="condiments">
+      <input type="checkbox" value=blackolives>Black Olives
+      <input type="checkbox" value=mayostard>Lettuce
+      <input type="checkbox" value=nomayo>No Veggies
+    </div>
+
+  </div>
+
+  <div id="total-order">
+    <p>Your total price so far is: <span id="price-target"></span></p>
+  </div>
+
+  <script type="text/javascript" src="DOMHandler.js"></script>
+  <script type="text/javascript" src="SandwichMaker.js"></script>
+  <script type="text/javascript" src="Meat.js"></script>
+</body>
+</html>
